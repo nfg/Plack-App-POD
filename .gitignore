@@ -1,0 +1,7 @@
+/Plack-App-POD-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
