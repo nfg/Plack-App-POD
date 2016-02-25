@@ -4,6 +4,11 @@ use strict;
 use 5.008_005;
 our $VERSION = '0.01';
 
+# Note to self: Same idea as Mojolicious::Plugin::PODRenderer, which is awesome.
+# Use Pod::Simple::XHTML to generate markup, serve as a page.
+# Should be mountable like
+#       mount '/pod' => Plack::App::POD->new()->to_app;
+
 1;
 __END__
 
@@ -23,7 +28,7 @@ Plack::App::POD is
 
 =head1 AUTHOR
 
-Nigel Gregoire E<lt>nigelg@airg.comE<gt>
+Nigel Gregoire E<lt>nigelgregoire@gmail.comE<gt>
 
 =head1 COPYRIGHT
 
